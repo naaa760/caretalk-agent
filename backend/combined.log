@@ -11,3 +11,8 @@
 {"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-07-21T09:33:09.434Z"}
 {"level":"info","message":"Server is running on port 3001","timestamp":"2025-07-21T09:33:09.438Z"}
 {"level":"info","message":"Inngest endpoint available at http://localhost:3001/api/inngest","timestamp":"2025-07-21T09:33:09.438Z"}
+{"code":"ETIMEOUT","hostname":"cluster0.znbgmwt.mongodb.net","level":"error","message":"MongoDB connection error: queryTxt ETIMEOUT cluster0.znbgmwt.mongodb.net","stack":"Error: queryTxt ETIMEOUT cluster0.znbgmwt.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:293:17)","syscall":"queryTxt","timestamp":"2025-07-21T09:42:56.285Z"}
+{"level":"info","message":"Connected to MongoDB Atlas","timestamp":"2025-07-21T10:13:02.035Z"}
+{"level":"info","message":"Server is running on port 3001","timestamp":"2025-07-21T10:13:02.038Z"}
+{"level":"info","message":"Inngest endpoint available at http://localhost:3001/api/inngest","timestamp":"2025-07-21T10:13:02.039Z"}
+{"code":"ETIMEOUT","hostname":"cluster0.znbgmwt.mongodb.net","level":"error","message":"MongoDB connection error: queryTxt ETIMEOUT cluster0.znbgmwt.mongodb.net","stack":"Error: queryTxt ETIMEOUT cluster0.znbgmwt.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:293:17)","syscall":"queryTxt","timestamp":"2025-07-21T15:36:20.134Z"}
