@@ -1,0 +1,1 @@
+{"code":"ETIMEOUT","hostname":"cluster0.znbgmwt.mongodb.net","level":"error","message":"MongoDB connection error: queryTxt ETIMEOUT cluster0.znbgmwt.mongodb.net","stack":"Error: queryTxt ETIMEOUT cluster0.znbgmwt.mongodb.net\n    at QueryReqWrap.onresolve [as oncomplete] (node:internal/dns/promises:293:17)","syscall":"queryTxt","timestamp":"2025-07-21T06:26:48.130Z"}
