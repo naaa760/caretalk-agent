@@ -1,0 +1,23 @@
+{
+  "/_not-found/page": "app/_not-found/page.js",
+  "/about/page": "app/about/page.js",
+  "/api/activity/route": "app/api/activity/route.js",
+  "/api/auth/login/route": "app/api/auth/login/route.js",
+  "/api/auth/me/route": "app/api/auth/me/route.js",
+  "/api/auth/register/route": "app/api/auth/register/route.js",
+  "/api/auth/session/route": "app/api/auth/session/route.js",
+  "/api/chat/sessions/[sessionId]/history/route": "app/api/chat/sessions/[sessionId]/history/route.js",
+  "/api/chat/sessions/[sessionId]/messages/route": "app/api/chat/sessions/[sessionId]/messages/route.js",
+  "/api/chat/sessions/[sessionId]/route": "app/api/chat/sessions/[sessionId]/route.js",
+  "/api/chat/sessions/route": "app/api/chat/sessions/route.js",
+  "/api/mood/route": "app/api/mood/route.js",
+  "/dashboard/page": "app/dashboard/page.js",
+  "/favicon.ico/route": "app/favicon.ico/route.js",
+  "/features/page": "app/features/page.js",
+  "/forgot-password/page": "app/forgot-password/page.js",
+  "/login/page": "app/login/page.js",
+  "/page": "app/page.js",
+  "/reset-password/page": "app/reset-password/page.js",
+  "/signup/page": "app/signup/page.js",
+  "/therapy/[sessionId]/page": "app/therapy/[sessionId]/page.js"
+}
