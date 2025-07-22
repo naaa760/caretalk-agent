@@ -657,7 +657,7 @@ export default function Home() {
                     }}
                   >
                     There is no one-size-fits-all solution to mental well-being.
-                    Aura is the first all.
+                    CrTk is the first all.
                   </p>
                 </div>
                 <div className="text-center">
@@ -678,7 +678,7 @@ export default function Home() {
                     }}
                   >
                     There is no one-size-fits-all solution to mental well-being.
-                    Aura is the first all.
+                    CrTk is the first all.
                   </p>
                 </div>
               </div>
@@ -752,7 +752,7 @@ export default function Home() {
                     }}
                   >
                     There is no one-size-fits-all solution to mental well-being.
-                    Aura is the first all.
+                    CrTk is the first all.
                   </p>
                 </div>
                 <div className="text-center">
@@ -773,7 +773,7 @@ export default function Home() {
                     }}
                   >
                     There is no one-size-fits-all solution to mental well-being.
-                    Aura is the first all.
+                    CrTk is the first all.
                   </p>
                 </div>
               </div>
@@ -800,7 +800,7 @@ export default function Home() {
                   }}
                 >
                   There is no one-size-fits-all solution to mental well-being.
-                  Aura is the first all.
+                  CrTk is the first all.
                 </p>
               </div>
               <div className="absolute top-6 right-6 w-48 text-right">
@@ -821,7 +821,7 @@ export default function Home() {
                   }}
                 >
                   There is no one-size-fits-all solution to mental well-being.
-                  Aura is the first all.
+                  CrTk is the first all.
                 </p>
               </div>
               <div className="absolute bottom-6 left-6 w-48 text-left">
@@ -842,7 +842,7 @@ export default function Home() {
                   }}
                 >
                   There is no one-size-fits-all solution to mental well-being.
-                  Aura is the first all.
+                  CrTk is the first all.
                 </p>
               </div>
               <div className="absolute bottom-6 right-6 w-48 text-right">
@@ -863,7 +863,7 @@ export default function Home() {
                   }}
                 >
                   There is no one-size-fits-all solution to mental well-being.
-                  Aura is the first all.
+                  CrTk is the first all.
                 </p>
               </div>
               {/* Central Solar System Graphic - Centered */}

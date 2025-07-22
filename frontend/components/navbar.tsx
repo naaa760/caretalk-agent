@@ -37,7 +37,7 @@ export function Navbar() {
               >
                 <div className="flex flex-col">
                   <span className="font-semibold text-lg bg-gradient-to-r from-amber-200 to-amber-300 bg-clip-text text-transparent">
-                    Aura3.0
+                    CrTk
                   </span>
                   <span className="text-xs dark:text-muted-foreground">
                     Your mental health Companion{" "}

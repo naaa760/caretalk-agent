@@ -416,32 +416,32 @@ export default function Dashboard() {
       title: "Mood Score",
       value: dailyStats.moodScore ? `${dailyStats.moodScore}%` : "No data",
       icon: Brain,
-      color: "text-purple-500",
-      bgColor: "bg-purple-500/10",
+      color: "text-[#b39ddb]",
+      bgColor: "bg-[#b39ddb]/10",
       description: "Today's average mood",
     },
     {
       title: "Completion Rate",
       value: "100%",
       icon: Trophy,
-      color: "text-yellow-500",
-      bgColor: "bg-yellow-500/10",
+      color: "text-[#b39ddb]",
+      bgColor: "bg-[#b39ddb]/10",
       description: "Perfect completion rate",
     },
     {
       title: "Therapy Sessions",
       value: `${dailyStats.mindfulnessCount} sessions`,
       icon: Heart,
-      color: "text-rose-500",
-      bgColor: "bg-rose-500/10",
+      color: "text-[#b39ddb]",
+      bgColor: "bg-[#b39ddb]/10",
       description: "Total sessions completed",
     },
     {
       title: "Total Activities",
       value: dailyStats.totalActivities.toString(),
       icon: Activity,
-      color: "text-blue-500",
-      bgColor: "bg-blue-500/10",
+      color: "text-[#b39ddb]",
+      bgColor: "bg-[#b39ddb]/10",
       description: "Planned for today",
     },
   ];
@@ -507,8 +507,11 @@ export default function Dashboard() {
   }
 
   return (
-    <div className="min-h-screen bg-background">
-      <Container className="pt-20 pb-8 space-y-6">
+    <div className="min-h-screen relative bg-black overflow-x-hidden">
+      {/* Blurred glows for depth: only light purple and lime green */}
+      <div className="pointer-events-none absolute -top-32 -left-32 w-96 h-96 bg-[#b39ddb] opacity-25 rounded-full blur-[120px] z-0"></div>
+      <div className="pointer-events-none absolute top-1/2 right-0 w-80 h-80 bg-[#b9ff66] opacity-15 rounded-full blur-[100px] z-0"></div>
+      <Container className="pt-20 pb-8 space-y-6 relative z-10">
         {/* Header Section */}
         <div className="flex justify-between items-center">
           <motion.div
@@ -516,10 +519,10 @@ export default function Dashboard() {
             animate={{ opacity: 1, x: 0 }}
             className="space-y-2"
           >
-            <h1 className="text-3xl font-bold text-foreground">
+            <h1 className="text-4xl md:text-5xl font-extrabold text-white tracking-tight mb-1">
               Welcome back, {user?.name || "there"}
             </h1>
-            <p className="text-muted-foreground">
+            <p className="text-white text-lg font-medium">
               {currentTime.toLocaleDateString("en-US", {
                 weekday: "long",
                 month: "long",
@@ -528,46 +531,52 @@ export default function Dashboard() {
             </p>
           </motion.div>
           <div className="flex items-center gap-4">
-            <Button variant="outline" size="icon">
-              <Bell className="h-5 w-5" />
+            <Button
+              variant="outline"
+              size="icon"
+              className="hover:bg-[#b39ddb]/20 transition-all"
+            >
+              <Bell className="h-5 w-5 group-hover:animate-bounce text-[#b39ddb]" />
             </Button>
           </div>
         </div>
-
+        {/* Divider */}
+        <div className="w-full h-0.5 bg-gradient-to-r from-[#b39ddb]/30 via-[#b9ff66]/20 to-transparent rounded-full mb-2" />
         {/* Main Grid Layout */}
         <div className="space-y-6">
           {/* Top Cards Grid */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
             {/* Quick Actions Card */}
-            <Card className="border-primary/10 relative overflow-hidden group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary/5 via-primary/10 to-transparent" />
+            <Card className="border-[#b39ddb]/30 relative overflow-hidden group backdrop-blur-xl bg-[#23232b]/60 border shadow-xl hover:shadow-2xl transition-all duration-300">
+              <div className="absolute inset-0 bg-gradient-to-br from-[#b39ddb]/10 via-[#b9ff66]/10 to-transparent" />
               <CardContent className="p-6 relative">
                 <div className="space-y-6">
                   <div className="flex items-center gap-3">
-                    <div className="w-10 h-10 rounded-full bg-primary/10 flex items-center justify-center">
-                      <Sparkles className="w-5 h-5 text-primary" />
+                    <div className="w-10 h-10 rounded-full bg-[#b39ddb]/30 flex items-center justify-center group-hover:scale-110 transition-transform">
+                      <Sparkles className="w-5 h-5 text-[#b9ff66] group-hover:animate-spin" />
                     </div>
                     <div>
-                      <h3 className="font-semibold text-lg">Quick Actions</h3>
-                      <p className="text-sm text-muted-foreground">
+                      <h3 className="font-semibold text-lg text-white">
+                        Quick Actions
+                      </h3>
+                      <p className="text-sm text-[#b39ddb]">
                         Start your wellness journey
                       </p>
                     </div>
                   </div>
-
                   <div className="grid gap-3">
                     <Button
                       variant="default"
                       className={cn(
                         "w-full justify-between items-center p-6 h-auto group/button",
-                        "bg-gradient-to-r from-primary/90 to-primary hover:from-primary hover:to-primary/90",
-                        "transition-all duration-200 group-hover:translate-y-[-2px]"
+                        "bg-gradient-to-r from-[#b39ddb]/80 via-[#b9ff66]/80 to-[#23232b]/80 hover:from-[#b9ff66] hover:to-[#b39ddb]",
+                        "transition-all duration-200 group-hover:scale-[1.03] shadow-lg text-black"
                       )}
                       onClick={handleStartTherapy}
                     >
                       <div className="flex items-center gap-3">
-                        <div className="w-8 h-8 rounded-full bg-white/10 flex items-center justify-center">
-                          <MessageSquare className="w-4 h-4 text-white" />
+                        <div className="w-8 h-8 rounded-full bg-white/20 flex items-center justify-center">
+                          <MessageSquare className="w-4 h-4 text-white group-hover:animate-pulse" />
                         </div>
                         <div className="text-left">
                           <div className="font-semibold text-white">
@@ -582,43 +591,45 @@ export default function Dashboard() {
                         <ArrowRight className="w-5 h-5 text-white" />
                       </div>
                     </Button>
-
                     <div className="grid grid-cols-2 gap-3">
                       <Button
                         variant="outline"
                         className={cn(
-                          "flex flex-col h-[120px] px-4 py-3 group/mood hover:border-primary/50",
-                          "justify-center items-center text-center",
-                          "transition-all duration-200 group-hover:translate-y-[-2px]"
+                          "flex flex-col h-[120px] px-4 py-3 group/mood hover:border-[#b39ddb]/50",
+                          "justify-center items-center text-center bg-[#23232b]/60 border border-[#b39ddb]/20 backdrop-blur-md shadow-md hover:shadow-xl",
+                          "transition-all duration-200 group-hover:scale-[1.03] text-white"
                         )}
                         onClick={() => setShowMoodModal(true)}
                       >
-                        <div className="w-10 h-10 rounded-full bg-rose-500/10 flex items-center justify-center mb-2">
-                          <Heart className="w-5 h-5 text-rose-500" />
+                        <div className="w-10 h-10 rounded-full bg-[#b39ddb]/20 flex items-center justify-center mb-2">
+                          <Heart className="w-5 h-5 text-[#b9ff66] group-hover:animate-bounce" />
                         </div>
                         <div>
-                          <div className="font-medium text-sm">Track Mood</div>
-                          <div className="text-xs text-muted-foreground mt-0.5">
+                          <div className="font-medium text-sm text-white">
+                            Track Mood
+                          </div>
+                          <div className="text-xs text-[#b39ddb] mt-0.5">
                             How are you feeling?
                           </div>
                         </div>
                       </Button>
-
                       <Button
                         variant="outline"
                         className={cn(
-                          "flex flex-col h-[120px] px-4 py-3 group/ai hover:border-primary/50",
-                          "justify-center items-center text-center",
-                          "transition-all duration-200 group-hover:translate-y-[-2px]"
+                          "flex flex-col h-[120px] px-4 py-3 group/ai hover:border-[#b9ff66]/50",
+                          "justify-center items-center text-center bg-[#23232b]/60 border border-[#b9ff66]/20 backdrop-blur-md shadow-md hover:shadow-xl",
+                          "transition-all duration-200 group-hover:scale-[1.03] text-white"
                         )}
                         onClick={handleAICheckIn}
                       >
-                        <div className="w-10 h-10 rounded-full bg-blue-500/10 flex items-center justify-center mb-2">
-                          <BrainCircuit className="w-5 h-5 text-blue-500" />
+                        <div className="w-10 h-10 rounded-full bg-[#b9ff66]/20 flex items-center justify-center mb-2">
+                          <BrainCircuit className="w-5 h-5 text-[#b39ddb] group-hover:animate-bounce" />
                         </div>
                         <div>
-                          <div className="font-medium text-sm">Check-in</div>
-                          <div className="text-xs text-muted-foreground mt-0.5">
+                          <div className="font-medium text-sm text-white">
+                            Check-in
+                          </div>
+                          <div className="text-xs text-[#b9ff66] mt-0.5">
                             Quick wellness check
                           </div>
                         </div>
@@ -628,14 +639,15 @@ export default function Dashboard() {
                 </div>
               </CardContent>
             </Card>
-
             {/* Today's Overview Card */}
-            <Card className="border-primary/10">
+            <Card className="border-[#b39ddb]/30 backdrop-blur-xl bg-[#23232b]/60 border shadow-xl hover:shadow-2xl transition-all duration-300">
               <CardHeader>
                 <div className="flex items-center justify-between">
                   <div>
-                    <CardTitle>Today's Overview</CardTitle>
-                    <CardDescription>
+                    <CardTitle className="text-lg font-bold text-[#b39ddb]">
+                      Today's Overview
+                    </CardTitle>
+                    <CardDescription className="text-white">
                       Your wellness metrics for{" "}
                       {format(new Date(), "MMMM d, yyyy")}
                     </CardDescription>
@@ -646,7 +658,13 @@ export default function Dashboard() {
                     onClick={fetchDailyStats}
                     className="h-8 w-8"
                   >
-                    <Loader2 className={cn("h-4 w-4", "animate-spin")} />
+                    <Loader2
+                      className={cn(
+                        "h-4 w-4",
+                        "animate-spin",
+                        "text-[#b9ff66]"
+                      )}
+                    />
                   </Button>
                 </div>
               </CardHeader>
@@ -656,35 +674,44 @@ export default function Dashboard() {
                     <div
                       key={stat.title}
                       className={cn(
-                        "p-4 rounded-lg transition-all duration-200 hover:scale-[1.02]",
+                        "p-4 rounded-lg transition-all duration-200 hover:scale-[1.04] shadow-md border border-[#b39ddb]/10 backdrop-blur-md bg-[#18181b]/80",
                         stat.bgColor
                       )}
                     >
                       <div className="flex items-center gap-2">
-                        <stat.icon className={cn("w-5 h-5", stat.color)} />
-                        <p className="text-sm font-medium">{stat.title}</p>
+                        <stat.icon
+                          className={cn(
+                            "w-5 h-5",
+                            stat.color,
+                            "group-hover:animate-bounce"
+                          )}
+                        />
+                        <p className="text-sm font-medium text-white">
+                          {stat.title}
+                        </p>
                       </div>
-                      <p className="text-2xl font-bold mt-2">{stat.value}</p>
-                      <p className="text-sm text-muted-foreground mt-1">
+                      <p className="text-2xl font-bold mt-2 text-[#b9ff66]">
+                        {stat.value}
+                      </p>
+                      <p className="text-sm text-[#b39ddb] mt-1">
                         {stat.description}
                       </p>
                     </div>
                   ))}
                 </div>
-                <div className="mt-4 text-xs text-muted-foreground text-right">
+                <div className="mt-4 text-xs text-[#b39ddb] text-right">
                   Last updated: {format(dailyStats.lastUpdated, "h:mm a")}
                 </div>
               </CardContent>
             </Card>
-
             {/* Insights Card */}
-            <Card className="border-primary/10">
+            <Card className="border-transparent backdrop-blur-xl bg-[#23232b]/60 shadow-[0_0_16px_0_#b9ff6640] hover:shadow-[0_0_32px_0_#b9ff6640] transition-all duration-300">
               <CardHeader>
-                <CardTitle className="flex items-center gap-2">
-                  <BrainCircuit className="w-5 h-5 text-primary" />
-                  Insights
+                <CardTitle className="flex items-center gap-2 text-lg font-bold text-[#b9ff66]">
+                  {" "}
+                  <BrainCircuit className="w-5 h-5 text-[#b39ddb]" /> Insights
                 </CardTitle>
-                <CardDescription>
+                <CardDescription className="text-white">
                   Personalized recommendations based on your activity patterns
                 </CardDescription>
               </CardHeader>
@@ -695,25 +722,27 @@ export default function Dashboard() {
                       <div
                         key={index}
                         className={cn(
-                          "p-4 rounded-lg space-y-2 transition-all hover:scale-[1.02]",
+                          "p-4 rounded-lg space-y-2 transition-all hover:scale-[1.04] shadow-md border border-[#b9ff66]/10 backdrop-blur-md bg-[#18181b]/80",
                           insight.priority === "high"
-                            ? "bg-primary/10"
+                            ? "bg-[#b9ff66]/10"
                             : insight.priority === "medium"
-                            ? "bg-primary/5"
-                            : "bg-muted"
+                            ? "bg-[#b39ddb]/10"
+                            : "bg-[#23232b]/10"
                         )}
                       >
                         <div className="flex items-center gap-2">
-                          <insight.icon className="w-5 h-5 text-primary" />
-                          <p className="font-medium">{insight.title}</p>
+                          <insight.icon className="w-5 h-5 text-[#b9ff66] group-hover:animate-bounce" />
+                          <p className="font-medium text-white">
+                            {insight.title}
+                          </p>
                         </div>
-                        <p className="text-sm text-muted-foreground">
+                        <p className="text-sm text-[#b39ddb]">
                           {insight.description}
                         </p>
                       </div>
                     ))
                   ) : (
-                    <div className="text-center text-muted-foreground py-8">
+                    <div className="text-center text-[#b39ddb] py-8">
                       <Activity className="w-8 h-8 mx-auto mb-3 opacity-50" />
                       <p>
                         Complete more activities to receive personalized
@@ -725,10 +754,11 @@ export default function Dashboard() {
               </CardContent>
             </Card>
           </div>
-
+          {/* Section Divider */}
+          <div className="w-full h-0.5 bg-gradient-to-r from-[#b39ddb]/20 via-[#b9ff66]/20 to-transparent rounded-full my-4" />
           {/* Content Grid */}
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-            {/* Left side - Spans 2 columns */}
+            {/* Left side - Spans 3 columns */}
             <div className="lg:col-span-3 space-y-6">
               {/* Anxiety Games - Now directly below Fitbit */}
               <AnxietyGames onGamePlayed={handleGamePlayed} />
@@ -736,33 +766,33 @@ export default function Dashboard() {
           </div>
         </div>
       </Container>
-
       {/* Mood tracking modal */}
       <Dialog open={showMoodModal} onOpenChange={setShowMoodModal}>
-        <DialogContent className="sm:max-w-[425px]">
+        <DialogContent className="sm:max-w-[425px] bg-[#23232b] border border-[#b39ddb]/20">
           <DialogHeader>
-            <DialogTitle>How are you feeling?</DialogTitle>
-            <DialogDescription>
+            <DialogTitle className="text-[#b39ddb]">
+              How are you feeling?
+            </DialogTitle>
+            <DialogDescription className="text-white">
               Move the slider to track your current mood
             </DialogDescription>
           </DialogHeader>
           <MoodForm onSuccess={() => setShowMoodModal(false)} />
         </DialogContent>
       </Dialog>
-
       {/* AI check-in chat */}
       {showCheckInChat && (
-        <div className="fixed inset-0 bg-background/80 backdrop-blur-sm z-50">
-          <div className="fixed inset-y-0 right-0 w-full max-w-sm bg-background border-l shadow-lg">
+        <div className="fixed inset-0 bg-[#23232b]/80 backdrop-blur-sm z-50">
+          <div className="fixed inset-y-0 right-0 w-full max-w-sm bg-[#18181b] border-l border-[#b39ddb]/20 shadow-lg">
             <div className="flex h-full flex-col">
-              <div className="flex items-center justify-between px-4 py-3 border-b">
-                <h3 className="font-semibold">AI Check-in</h3>
+              <div className="flex items-center justify-between px-4 py-3 border-b border-[#b39ddb]/20">
+                <h3 className="font-semibold text-[#b39ddb]">AI Check-in</h3>
                 <Button
                   variant="ghost"
                   size="icon"
                   onClick={() => setShowCheckInChat(false)}
                 >
-                  <X className="w-4 h-4" />
+                  <X className="w-4 h-4 text-[#b39ddb]" />
                 </Button>
               </div>
               <div className="flex-1 overflow-y-auto p-4"></div>
@@ -770,7 +800,6 @@ export default function Dashboard() {
           </div>
         </div>
       )}
-
       <ActivityLogger
         open={showActivityLogger}
         onOpenChange={setShowActivityLogger}
