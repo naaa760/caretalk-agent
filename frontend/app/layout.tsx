@@ -2,7 +2,7 @@ import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 
 import "./globals.css";
-import { Footer } from "@/components/footer";
+
 import { Navbar } from "@/components/navbar";
 import { Toaster } from "@/components/ui/toaster";
 import { Providers } from "@/components/providers";
@@ -29,7 +29,7 @@ export default function RootLayout({
         <Providers>
           <Navbar />
           <main>{children}</main>
-          <Footer />
+
           <Toaster />
         </Providers>
       </body>

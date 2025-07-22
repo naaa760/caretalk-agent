@@ -166,9 +166,10 @@ export default function Home() {
           </div>
           {/* Purple and Green Shining Effects */}
           <div className="absolute inset-0 pointer-events-none">
-            <div className="absolute top-[-50px] left-[-50px] w-[300px] h-[300px] bg-purple-300 opacity-30 rounded-full blur-[80px]"></div>
-            <div className="absolute bottom-[-40px] right-[-40px] w-[250px] h-[250px] bg-lime-400 opacity-25 rounded-full blur-[70px]"></div>
-            <div className="absolute top-1/3 right-1/4 w-[200px] h-[150px] bg-purple-300 opacity-20 rounded-full blur-[60px]"></div>
+            <div className="absolute top-[-50px] left-[-50px] w-[300px] h-[300px] bg-purple-300 opacity-40 rounded-full blur-[80px]"></div>
+            <div className="absolute bottom-[-40px] right-[-40px] w-[250px] h-[250px] bg-lime-400 opacity-35 rounded-full blur-[70px]"></div>
+            <div className="absolute top-1/3 right-1/4 w-[200px] h-[150px] bg-purple-300 opacity-35 rounded-full blur-[60px]"></div>
+            <div className="absolute top-1/2 left-1/3 w-[180px] h-[180px] bg-green-400 opacity-30 rounded-full blur-[50px]"></div>
           </div>
           <div className="relative z-10 rounded-3xl overflow-hidden">
             <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-8 max-w-7xl mx-auto">
@@ -411,6 +412,216 @@ export default function Home() {
                 scrollbar-width: none;
               }
             `}</style>
+          </div>
+        </div>
+
+        {/* New Testimonial Cards Section */}
+        <div className="w-full py-12 px-4 bg-white relative overflow-hidden">
+          {/* Purple and Green Shining Effects */}
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-[-50px] left-[-50px] w-[300px] h-[300px] bg-purple-300 opacity-40 rounded-full blur-[80px]"></div>
+            <div className="absolute bottom-[-40px] right-[-40px] w-[250px] h-[250px] bg-lime-400 opacity-35 rounded-full blur-[70px]"></div>
+            <div className="absolute top-1/3 right-1/4 w-[200px] h-[150px] bg-purple-300 opacity-35 rounded-full blur-[60px]"></div>
+            <div className="absolute top-1/2 left-1/3 w-[180px] h-[180px] bg-lime-400 opacity-30 rounded-full blur-[50px]"></div>
+          </div>
+
+          <div className="relative z-10 max-w-5xl mx-auto">
+            {/* Header Section */}
+            <div className="text-center mb-12">
+              <h1
+                className="text-3xl md:text-4xl lg:text-5xl font-medium mb-3 leading-tight"
+                style={{
+                  fontFamily: "'Playfair Display', 'Times New Roman', serif",
+                  background:
+                    "linear-gradient(90deg, #e6e6fa 0%, #e0cfff 30%, #b39ddb 60%, #000000 100%)",
+                  WebkitBackgroundClip: "text",
+                  WebkitTextFillColor: "transparent",
+                  backgroundClip: "text",
+                  color: "transparent",
+                  filter:
+                    "drop-shadow(0 0 20px rgba(179, 157, 219, 0.25)) drop-shadow(0 0 40px rgba(0,0,0,0.18))",
+                  textShadow:
+                    "0 0 30px rgba(179, 157, 219, 0.18), 0 0 60px rgba(0,0,0,0.12)",
+                }}
+              >
+                People are at the
+                <br />
+                heart of what we do
+              </h1>
+              <p
+                className="text-sm md:text-base text-gray-600 max-w-lg mx-auto italic"
+                style={{
+                  fontFamily:
+                    "'Dancing Script', 'Pacifico', 'Great Vibes', cursive",
+                }}
+              >
+                We collaborate with thousands of creators, entrepreneurs and
+                complete legends.
+              </p>
+            </div>
+
+            {/* Cards Container - Compact Fan Layout */}
+            <div className="relative flex justify-center items-center h-96 mb-8 max-w-5xl mx-auto">
+              {/* Card 1 - Far Left */}
+              <div className="absolute left-0 top-8 transform -rotate-3 z-10 hover:rotate-0 hover:scale-105 transition-all duration-300 hover:z-50">
+                <div className="w-56 h-40 bg-gradient-to-br from-purple-100 via-blue-50 to-white rounded-2xl p-5 shadow-xl border border-white/80">
+                  <p
+                    className="text-gray-700 text-sm leading-tight mb-3 italic font-normal"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    "Sam is the first external PM recruiter I've spoken with who
+                    gets it. His understanding of the PM space"
+                  </p>
+                  <div className="flex items-center mt-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-orange-200 to-pink-200 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3 shadow-md">
+                      MJ
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-800 font-medium text-sm"
+                        style={{ fontFamily: "'Inter', sans-serif" }}
+                      >
+                        Michal Jhon
+                      </p>
+                      <p
+                        className="text-gray-600 text-xs"
+                        style={{ fontFamily: "'Inter', sans-serif" }}
+                      >
+                        28 years
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 2 - Left */}
+              <div className="absolute left-1/4 top-4 transform -rotate-2 z-20 hover:rotate-0 hover:scale-105 transition-all duration-300 hover:z-50">
+                <div className="w-56 h-40 bg-gradient-to-br from-pink-100 via-orange-50 to-white rounded-2xl p-5 shadow-xl border border-white/80">
+                  <p
+                    className="text-gray-700 text-sm leading-tight mb-3 italic font-normal"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    "Sam is the first external PM recruiter I've spoken with who
+                    gets it. His understanding of the PM space"
+                  </p>
+                  <div className="flex items-center mt-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3 shadow-md">
+                      SJ
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-800 font-medium text-sm"
+                        style={{ fontFamily: "'Inter', sans-serif" }}
+                      >
+                        Sarah Johnson
+                      </p>
+                      <p
+                        className="text-gray-600 text-xs"
+                        style={{ fontFamily: "'Inter', sans-serif" }}
+                      >
+                        32 years
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 3 - Center */}
+              <div className="relative z-30 transform hover:scale-105 transition-all duration-300">
+                <div className="w-60 h-44 bg-gradient-to-br from-green-100 via-yellow-50 to-white rounded-2xl p-6 shadow-2xl border border-white/80">
+                  <p
+                    className="text-gray-700 text-sm leading-tight mb-3 italic font-normal"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    "Sam is the first external PM recruiter I've spoken with who
+                    gets it. His understanding of the PM space"
+                  </p>
+                  <div className="flex items-center mt-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-blue-200 to-lime-200 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3 shadow-md">
+                      DK
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-800 font-medium text-sm"
+                        style={{ fontFamily: "'Inter', sans-serif" }}
+                      >
+                        David Kim
+                      </p>
+                      <p
+                        className="text-gray-600 text-xs"
+                        style={{ fontFamily: "'Inter', sans-serif" }}
+                      >
+                        29 years
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 4 - Right */}
+              <div className="absolute right-1/4 top-4 transform rotate-2 z-20 hover:rotate-0 hover:scale-105 transition-all duration-300 hover:z-50">
+                <div className="w-56 h-40 bg-gradient-to-br from-orange-100 via-pink-50 to-white rounded-2xl p-5 shadow-xl border border-white/80">
+                  <p
+                    className="text-gray-700 text-sm leading-tight mb-3 italic font-normal"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    "Sam is the first external PM recruiter I've spoken with who
+                    gets it. His understanding of the PM space"
+                  </p>
+                  <div className="flex items-center mt-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-lime-200 to-blue-200 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3 shadow-md">
+                      AL
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-800 font-medium text-sm"
+                        style={{ fontFamily: "'Inter', sans-serif" }}
+                      >
+                        Alex Lee
+                      </p>
+                      <p
+                        className="text-gray-600 text-xs"
+                        style={{ fontFamily: "'Inter', sans-serif" }}
+                      >
+                        26 years
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Card 5 - Far Right */}
+              <div className="absolute right-0 top-8 transform rotate-3 z-10 hover:rotate-0 hover:scale-105 transition-all duration-300 hover:z-50">
+                <div className="w-56 h-40 bg-gradient-to-br from-yellow-100 via-orange-50 to-white rounded-2xl p-5 shadow-xl border border-white/80">
+                  <p
+                    className="text-gray-700 text-sm leading-tight mb-3 italic font-normal"
+                    style={{ fontFamily: "'Inter', sans-serif" }}
+                  >
+                    "Sam is the first external PM recruiter I've spoken with who
+                    gets it. His understanding of the PM space"
+                  </p>
+                  <div className="flex items-center mt-3">
+                    <div className="w-8 h-8 bg-gradient-to-br from-purple-200 to-pink-200 rounded-full flex items-center justify-center text-white font-semibold text-sm mr-3 shadow-md">
+                      RW
+                    </div>
+                    <div>
+                      <p
+                        className="text-gray-800 font-medium text-sm"
+                        style={{ fontFamily: "'Inter', sans-serif" }}
+                      >
+                        Rachel Wong
+                      </p>
+                      <p
+                        className="text-gray-600 text-xs"
+                        style={{ fontFamily: "'Inter', sans-serif" }}
+                      >
+                        31 years
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
 
@@ -701,6 +912,246 @@ export default function Home() {
                   +
                 </div>
               </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Social Media Showcase Section - Medimind */}
+        <div className="w-full min-h-[60vh] bg-gradient-to-b from-white via-[#fff7f2] to-[#fbeee6] flex flex-col justify-between relative overflow-hidden pt-16 pb-8">
+          {/* Wavy background image */}
+          <img
+            src="/wavy.png"
+            alt="Wavy background"
+            className="absolute inset-0 w-full h-full object-cover opacity-40 pointer-events-none z-0"
+          />
+          {/* Soft top fade */}
+          <div className="absolute top-0 left-0 w-full h-20 z-10 pointer-events-none">
+            <div className="w-full h-full bg-gradient-to-b from-white/90 via-white/60 to-transparent blur-md"></div>
+          </div>
+          {/* Soft bottom fade */}
+          <div className="absolute bottom-0 left-0 w-full h-20 z-10 pointer-events-none">
+            <div className="w-full h-full bg-gradient-to-t from-[#fbeee6]/90 via-[#fff7f2]/60 to-transparent blur-md"></div>
+          </div>
+          {/* Mobile layout */}
+          <div className="flex flex-col items-center justify-center w-full md:hidden z-10">
+            <span
+              className="block text-base font-serif text-gray-400 mb-1 tracking-wide"
+              style={{ fontWeight: 300, letterSpacing: "0.08em" }}
+            >
+              Follow us
+            </span>
+            <span
+              className="block text-2xl font-serif font-bold bg-gradient-to-r from-black via-gray-700 to-black text-transparent bg-clip-text drop-shadow-lg tracking-tight leading-none mb-4"
+              style={{
+                fontFamily: "'Playfair Display',serif",
+                letterSpacing: "-0.04em",
+                lineHeight: 1,
+                textShadow: "0 2px 24px #b39ddb55, 0 1px 0 #fff",
+              }}
+            >
+              @MEDIMIND
+            </span>
+            <div className="grid grid-cols-3 gap-3 w-full max-w-xs mx-auto mb-6">
+              <div className="w-full aspect-square rounded-xl overflow-hidden shadow-md border border-white/30">
+                <img
+                  src="/k.png"
+                  alt="k"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-full aspect-square rounded-xl overflow-hidden shadow-md border border-white/30">
+                <img
+                  src="/k1.png"
+                  alt="k1"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-full aspect-square rounded-xl overflow-hidden shadow-md border border-white/30">
+                <img
+                  src="/k2.png"
+                  alt="k2"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-full aspect-square rounded-xl overflow-hidden shadow-md border border-white/30">
+                <img
+                  src="/k3.png"
+                  alt="k3"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-full aspect-square rounded-xl overflow-hidden shadow-md border border-white/30">
+                <img
+                  src="/k4.png"
+                  alt="k4"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="w-full aspect-square rounded-xl overflow-hidden shadow-md border border-white/30">
+                <img
+                  src="/k5.png"
+                  alt="k5"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+            {/* Footer - mobile */}
+            <div className="w-full flex flex-col items-center gap-2 px-2 mt-2 z-20">
+              <div className="flex items-center gap-2 mb-1">
+                <img src="/logo.svg" alt="Medimind Logo" className="w-6 h-6" />
+                <span className="font-serif font-semibold text-base text-gray-800">
+                  Medimind
+                </span>
+              </div>
+              <div className="text-xs text-gray-500 mb-1">
+                © 2077 Musefit. All rights reserved.
+              </div>
+              <div className="flex items-center gap-2">
+                <a href="#" aria-label="Twitter" className="hover:opacity-80">
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22.46 6c-.77.35-1.6.58-2.47.69a4.3 4.3 0 0 0 1.88-2.37 8.59 8.59 0 0 1-2.72 1.04A4.28 4.28 0 0 0 16.11 4c-2.37 0-4.29 1.92-4.29 4.29 0 .34.04.67.11.99C7.69 9.13 4.07 7.38 1.64 4.7c-.37.64-.58 1.38-.58 2.17 0 1.5.76 2.82 1.92 3.6-.7-.02-1.36-.21-1.94-.53v.05c0 2.1 1.5 3.85 3.5 4.25-.36.1-.74.16-1.13.16-.28 0-.54-.03-.8-.08.54 1.7 2.1 2.94 3.95 2.97A8.6 8.6 0 0 1 2 19.54c-.28 0-.56-.02-.83-.05A12.13 12.13 0 0 0 8.29 21.5c7.55 0 11.68-6.26 11.68-11.68 0-.18-.01-.36-.02-.54A8.18 8.18 0 0 0 22.46 6z" />
+                  </svg>
+                </a>
+                <a href="#" aria-label="LinkedIn" className="hover:opacity-80">
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M19 0h-14c-2.76 0-5 2.24-5 5v14c0 2.76 2.24 5 5 5h14c2.76 0 5-2.24 5-5v-14c0-2.76-2.24-5-5-5zm-11 19h-3v-10h3v10zm-1.5-11.28c-.97 0-1.75-.79-1.75-1.75s.78-1.75 1.75-1.75 1.75.79 1.75 1.75-.78 1.75-1.75 1.75zm13.5 11.28h-3v-5.6c0-1.34-.03-3.07-1.87-3.07-1.87 0-2.16 1.46-2.16 2.97v5.7h-3v-10h2.88v1.36h.04c.4-.75 1.38-1.54 2.84-1.54 3.04 0 3.6 2 3.6 4.59v5.59z" />
+                  </svg>
+                </a>
+                <a href="#" aria-label="Facebook" className="hover:opacity-80">
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M22.675 0h-21.35c-.733 0-1.325.592-1.325 1.325v21.351c0 .729.592 1.324 1.325 1.324h11.495v-9.294h-3.128v-3.622h3.128v-2.672c0-3.1 1.893-4.788 4.659-4.788 1.325 0 2.463.099 2.797.143v3.24l-1.918.001c-1.504 0-1.797.715-1.797 1.763v2.312h3.587l-.467 3.622h-3.12v9.293h6.116c.729 0 1.324-.595 1.324-1.324v-21.35c0-.733-.595-1.325-1.324-1.325z" />
+                  </svg>
+                </a>
+                <a href="#" aria-label="Peace" className="hover:opacity-80">
+                  <svg
+                    className="w-5 h-5"
+                    fill="currentColor"
+                    viewBox="0 0 24 24"
+                  >
+                    <path d="M12 2C6.477 2 2 6.477 2 12c0 5.523 4.477 10 10 10s10-4.477 10-10c0-5.523-4.477-10-10-10zm0 18c-4.418 0-8-3.582-8-8 0-4.418 3.582-8 8-8s8 3.582 8 8c0 4.418-3.582 8-8 8zm1-7h3a1 1 0 1 0 0-2h-3V7a1 1 0 1 0-2 0v3H7a1 1 0 1 0 0 2h3v3a1 1 0 1 0 2 0v-3z" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+          {/* Desktop layout (hidden on mobile) */}
+          <div className="relative flex flex-col items-center justify-center min-h-[40vh] w-full hidden md:flex">
+            {/* Colored glows behind images */}
+            <div className="absolute left-10 top-10 w-40 h-40 bg-purple-200 opacity-30 rounded-full blur-2xl z-0"></div>
+            <div className="absolute right-10 top-20 w-44 h-44 bg-pink-200 opacity-25 rounded-full blur-2xl z-0"></div>
+            <div
+              className="absolute left-1/2 bottom-0 w-56 h-32 bg-yellow-100 opacity-30 rounded-full blur-2xl z-0"
+              style={{ transform: "translateX(-50%)" }}
+            ></div>
+            {/* Images - scattered layout */}
+            <div className="relative w-full max-w-4xl h-[320px] mx-auto z-10">
+              {/* Top left small */}
+              <div
+                className="absolute left-0 top-16 w-24 h-24 rounded-2xl overflow-hidden shadow-xl backdrop-blur-md border border-white/40 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{ zIndex: 2 }}
+              >
+                <img
+                  src="/k.png"
+                  alt="k"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-200/60 to-transparent"></div>
+              </div>
+              {/* Bottom left large */}
+              <div
+                className="absolute left-24 bottom-0 w-40 h-40 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-md border border-white/40 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{ zIndex: 3 }}
+              >
+                <img
+                  src="/k1.png"
+                  alt="k1"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-yellow-200/60 to-transparent"></div>
+              </div>
+              {/* Top center large */}
+              <div
+                className="absolute left-1/2 top-0 w-48 h-48 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-md border border-white/40 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{ transform: "translateX(-50%)", zIndex: 4 }}
+              >
+                <img
+                  src="/k2.png"
+                  alt="k2"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-pink-200/60 to-transparent"></div>
+              </div>
+              {/* Bottom center medium */}
+              <div
+                className="absolute left-1/2 bottom-0 w-36 h-36 rounded-2xl overflow-hidden shadow-xl backdrop-blur-md border border-white/40 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{ transform: "translateX(-50%)", zIndex: 3 }}
+              >
+                <img
+                  src="/k3.png"
+                  alt="k3"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-green-200/60 to-transparent"></div>
+              </div>
+              {/* Top right large */}
+              <div
+                className="absolute right-24 top-4 w-44 h-44 rounded-2xl overflow-hidden shadow-2xl backdrop-blur-md border border-white/40 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{ zIndex: 3 }}
+              >
+                <img
+                  src="/k4.png"
+                  alt="k4"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-purple-200/60 to-transparent"></div>
+              </div>
+              {/* Bottom right small */}
+              <div
+                className="absolute right-0 bottom-12 w-24 h-24 rounded-2xl overflow-hidden shadow-xl backdrop-blur-md border border-white/40 transition-transform duration-300 hover:scale-105 hover:shadow-2xl"
+                style={{ zIndex: 2 }}
+              >
+                <img
+                  src="/k5.png"
+                  alt="k5"
+                  className="w-full h-full object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-br from-blue-200/60 to-transparent"></div>
+              </div>
+            </div>
+            {/* Centered text */}
+            <div
+              className="absolute left-1/2 top-1/2 flex flex-col items-center"
+              style={{ transform: "translate(-50%,-50%)", zIndex: 10 }}
+            >
+              <span
+                className="block text-lg md:text-xl font-serif text-gray-400 mb-2 tracking-wide"
+                style={{ fontWeight: 300, letterSpacing: "0.08em" }}
+              >
+                Follow us
+              </span>
+              <span
+                className="block text-[2.5rem] md:text-[4rem] lg:text-[5rem] font-serif font-bold bg-gradient-to-r from-black via-gray-700 to-black text-transparent bg-clip-text drop-shadow-lg tracking-tight leading-none"
+                style={{
+                  fontFamily: "'Playfair Display',serif",
+                  letterSpacing: "-0.04em",
+                  lineHeight: 1,
+                  textShadow: "0 2px 24px #b39ddb55, 0 1px 0 #fff",
+                }}
+              >
+                @MEDIMIND
+              </span>
             </div>
           </div>
         </div>
