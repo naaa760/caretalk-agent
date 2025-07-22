@@ -1,0 +1,110 @@
+# CrTk: AI-Powered Therapy & Mental Wellness Platform
+
+## 🧠 Overview
+
+<img width="1351" height="602" alt="image" src="https://github.com/user-attachments/assets/1f5633e7-9e0f-4521-b893-9f936ab6e14a" />
+
+
+CrTk is a modern, AI-powered mental health platform that delivers therapy conversations, real-time crisis detection, interactive activities, and mood tracking—all wrapped in a beautiful, accessible, and responsive UI. Built with Next.js 14, TypeScript, and Google Gemini AI, CrTk empowers users to improve their mental well-being with privacy, empathy, and cutting-edge technology.
+
+---
+
+## 🚀 Key Features
+
+- **AI-powered therapy conversations** with emotional intelligence
+- **Real-time crisis detection** and stress signal monitoring
+- **Interactive therapeutic activities** (breathing exercises, zen garden, forest walks, ocean waves)
+- **Mood tracking** with AI-powered insights
+- **Secure authentication** and session management
+- **Modern responsive design** with dark/light mode
+- **Progress tracking** and mental health analytics
+
+---
+
+## 📱 Tech Stack
+
+- **Next.js 14**: Modern React framework with app router
+- **TypeScript**: Type-safe development environment
+- **Tailwind CSS**: Utility-first styling framework
+- **Google Gemini AI**: Advanced conversational AI for therapy
+- **Framer Motion**: Smooth animations and interactions
+- **Radix UI**: Accessible component library
+- **NextAuth.js**: Authentication and session management
+- **MongoDB**: Scalable NoSQL database for session and user data
+- **Node.js**: Backend runtime for scalable server-side logic
+- **Inngest**: Serverless workflow engine for AI processing and crisis detection
+- **EchoAPI**: Prompt testing and API simulation for reliable AI interaction debugging
+
+---
+
+## 🎓 What You'll Learn
+
+- Next.js 14 with app router and server components
+- TypeScript best practices for React applications
+- Google Gemini AI integration and prompt engineering
+- Real-time chat interface development
+- Modern UI/UX design for mental health applications
+- Authentication flows and session management
+- Building a complete backend with Node.js
+- Deploying both backend and frontend
+
+---
+
+## 📚 Project Highlights
+
+- **AI therapist** with context-aware responses
+- **Real-time sentiment analysis** and emotional state detection
+- **Interactive mindfulness activities** with visual feedback
+- **Comprehensive mental health dashboard**
+- **Professional-grade UI** with accessibility features
+- **Responsive design** for all devices
+
+---
+
+## 👨‍💻 Tutorial Includes
+
+- Project setup with Next.js and TypeScript
+- Tailwind CSS configuration and styling
+- Google Gemini AI integration
+- Chat interface development
+- Authentication system setup
+- Interactive therapy components
+- Toast notifications and user feedback
+- Deployment and optimization
+
+---
+
+## 🛠️ Getting Started
+
+1. **Clone the repository:**
+   ```bash
+   git clone https://github.com/your-username/crtk.git
+   cd crtk
+   ```
+2. **Install dependencies:**
+   ```bash
+   npm install
+   # or
+   yarn install
+   ```
+3. **Configure environment variables:**
+   - Copy `.env.example` to `.env.local` and fill in your API keys and database URIs.
+4. **Run the development server:**
+   ```bash
+   npm run dev
+   # or
+   yarn dev
+   ```
+5. **Open [http://localhost:3000](http://localhost:3000) to view the app.**
+
+---
+
+## 🤝 Contributing
+
+Pull requests and issues are welcome! Please open an issue to discuss your ideas or report bugs.
+
+---
+
+## 📄 License
+
+This project is licensed under the MIT License.
