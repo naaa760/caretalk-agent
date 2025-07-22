@@ -26,7 +26,7 @@ CrTk is a modern, AI-powered mental health platform that delivers therapy conver
 - **Next.js 14**: Modern React framework with app router
 - **TypeScript**: Type-safe development environment
 - **Tailwind CSS**: Utility-first styling framework
-- **Google Gemini AI**: Advanced conversational AI for therapy
+- **Groq AI**: Advanced conversational AI for therapy
 - **Framer Motion**: Smooth animations and interactions
 - **Radix UI**: Accessible component library
 - **NextAuth.js**: Authentication and session management
