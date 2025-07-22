@@ -37,18 +37,6 @@ CrTk is a modern, AI-powered mental health platform that delivers therapy conver
 
 ---
 
-## 🎓 What You'll Learn
-
-- Next.js 14 with app router and server components
-- TypeScript best practices for React applications
-- Google Gemini AI integration and prompt engineering
-- Real-time chat interface development
-- Modern UI/UX design for mental health applications
-- Authentication flows and session management
-- Building a complete backend with Node.js
-- Deploying both backend and frontend
-
----
 
 ## 📚 Project Highlights
 
@@ -58,17 +46,3 @@ CrTk is a modern, AI-powered mental health platform that delivers therapy conver
 - **Comprehensive mental health dashboard**
 - **Professional-grade UI** with accessibility features
 - **Responsive design** for all devices
-
----
-
-## 👨‍💻 Tutorial Includes
-
-- Project setup with Next.js and TypeScript
-- Tailwind CSS configuration and styling
-- Google Gemini AI integration
-- Chat interface development
-- Authentication system setup
-- Interactive therapy components
-- Toast notifications and user feedback
-- Deployment and optimization
-
