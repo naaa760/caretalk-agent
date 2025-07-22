@@ -413,6 +413,297 @@ export default function Home() {
             `}</style>
           </div>
         </div>
+
+        {/* New Solar System Section */}
+        <div className="w-full py-20 px-4 relative overflow-hidden bg-black">
+          {/* Purple and Green Shining Effects */}
+          <div className="absolute inset-0 pointer-events-none">
+            <div className="absolute top-[-100px] left-[-100px] w-[400px] h-[400px] bg-purple-300 opacity-20 rounded-full blur-[100px]"></div>
+            <div className="absolute bottom-[-80px] right-[-80px] w-[350px] h-[350px] bg-lime-400 opacity-15 rounded-full blur-[80px]"></div>
+            <div className="absolute top-1/2 left-1/4 w-[200px] h-[200px] bg-blue-400 opacity-10 rounded-full blur-[60px]"></div>
+          </div>
+
+          <div className="relative z-10 max-w-7xl mx-auto">
+            {/* Mobile Layout - Stacked */}
+            <div className="md:hidden space-y-8">
+              {/* Top Text Blocks */}
+              <div className="grid grid-cols-1 gap-6">
+                <div className="text-center">
+                  <h3
+                    className="text-2xl font-semibold mb-3 bg-gradient-to-r from-purple-400 via-purple-300 to-white bg-clip-text text-transparent tracking-tight leading-tight"
+                    style={{
+                      fontFamily:
+                        "'Inter', 'SF Pro Display', -apple-system, sans-serif",
+                    }}
+                  >
+                    Equal breathe
+                  </h3>
+                  <p
+                    className="text-gray-300 text-sm leading-relaxed font-light tracking-wide"
+                    style={{
+                      fontFamily:
+                        "'Inter', 'SF Pro Text', -apple-system, sans-serif",
+                    }}
+                  >
+                    There is no one-size-fits-all solution to mental well-being.
+                    Aura is the first all.
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h3
+                    className="text-2xl font-semibold mb-3 bg-gradient-to-r from-lime-400 via-lime-300 to-blue-300 bg-clip-text text-transparent tracking-tight leading-tight"
+                    style={{
+                      fontFamily:
+                        "'Inter', 'SF Pro Display', -apple-system, sans-serif",
+                    }}
+                  >
+                    Reduce anxiety
+                  </h3>
+                  <p
+                    className="text-gray-300 text-sm leading-relaxed font-light tracking-wide"
+                    style={{
+                      fontFamily:
+                        "'Inter', 'SF Pro Text', -apple-system, sans-serif",
+                    }}
+                  >
+                    There is no one-size-fits-all solution to mental well-being.
+                    Aura is the first all.
+                  </p>
+                </div>
+              </div>
+
+              {/* Central Solar System Graphic */}
+              <div className="flex justify-center">
+                <div className="relative w-64 h-64 flex items-center justify-center">
+                  {/* Central Image - Meditation figure */}
+                  <div className="absolute inset-0 flex items-center justify-center z-20">
+                    <img
+                      src="/sol.png"
+                      alt="Central Meditation"
+                      className="w-20 h-20"
+                    />
+                  </div>
+                  {/* Orbital Rings */}
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-32 h-32 border border-gray-600/30 rounded-full"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-44 h-44 border border-gray-600/20 rounded-full"></div>
+                  </div>
+                  <div className="absolute inset-0 flex items-center justify-center">
+                    <div className="w-56 h-56 border border-gray-600/10 rounded-full"></div>
+                  </div>
+                  {/* Orbital Elements */}
+                  <div className="absolute top-4 left-1/2 transform -translate-x-1/2 w-2.5 h-2.5 bg-lime-400 rounded-full"></div>
+                  <div className="absolute top-1/4 left-4 w-2.5 h-2.5 bg-orange-400 rounded-full"></div>
+                  <div className="absolute top-1/4 right-4 w-2.5 h-2.5 bg-purple-400 rounded-full"></div>
+                  <div className="absolute top-1/2 right-1 w-2.5 h-2.5 bg-blue-400 rounded-full flex items-center justify-center">
+                    <span className="text-white text-xs">+</span>
+                  </div>
+                  <div className="absolute bottom-1/4 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-blue-300 rounded-full"></div>
+                  <div className="absolute bottom-4 right-4 w-2.5 h-2.5 bg-lime-300 rounded-full"></div>
+                  <div className="absolute bottom-1 left-1/2 transform -translate-x-1/2 w-4 h-4 bg-purple-300 rounded-full flex items-center justify-center">
+                    <div className="w-2 h-1 bg-pink-300 rounded-full"></div>
+                  </div>
+                  {/* Decorative Plus Signs */}
+                  <div className="absolute top-8 left-8 text-yellow-400 text-xs">
+                    +
+                  </div>
+                  <div className="absolute top-12 right-12 text-yellow-400 text-xs">
+                    +
+                  </div>
+                  <div className="absolute bottom-8 left-12 text-yellow-400 text-xs">
+                    +
+                  </div>
+                  <div className="absolute bottom-12 right-8 text-yellow-400 text-xs">
+                    +
+                  </div>
+                </div>
+              </div>
+
+              {/* Bottom Text Blocks */}
+              <div className="grid grid-cols-1 gap-6">
+                <div className="text-center">
+                  <h3
+                    className="text-2xl font-semibold mb-3 bg-gradient-to-r from-blue-300 via-blue-200 to-lime-400 bg-clip-text text-transparent tracking-tight leading-tight"
+                    style={{
+                      fontFamily:
+                        "'Inter', 'SF Pro Display', -apple-system, sans-serif",
+                    }}
+                  >
+                    Muscle backpain
+                  </h3>
+                  <p
+                    className="text-gray-300 text-sm leading-relaxed font-light tracking-wide"
+                    style={{
+                      fontFamily:
+                        "'Inter', 'SF Pro Text', -apple-system, sans-serif",
+                    }}
+                  >
+                    There is no one-size-fits-all solution to mental well-being.
+                    Aura is the first all.
+                  </p>
+                </div>
+                <div className="text-center">
+                  <h3
+                    className="text-2xl font-semibold mb-3 bg-gradient-to-r from-yellow-400 via-yellow-300 to-lime-400 bg-clip-text text-transparent tracking-tight leading-tight"
+                    style={{
+                      fontFamily:
+                        "'Inter', 'SF Pro Display', -apple-system, sans-serif",
+                    }}
+                  >
+                    Stress reduce
+                  </h3>
+                  <p
+                    className="text-gray-300 text-sm leading-relaxed font-light tracking-wide"
+                    style={{
+                      fontFamily:
+                        "'Inter', 'SF Pro Text', -apple-system, sans-serif",
+                    }}
+                  >
+                    There is no one-size-fits-all solution to mental well-being.
+                    Aura is the first all.
+                  </p>
+                </div>
+              </div>
+            </div>
+
+            {/* Desktop Layout - Original Corner Positioning */}
+            <div className="hidden md:flex min-h-[420px] items-center justify-center relative">
+              {/* Four Text Sections - Corners, slightly closer to center */}
+              <div className="absolute top-6 left-6 w-48 text-left">
+                <h3
+                  className="text-3xl font-semibold mb-4 bg-gradient-to-r from-purple-400 via-purple-300 to-white bg-clip-text text-transparent tracking-tight leading-tight"
+                  style={{
+                    fontFamily:
+                      "'Inter', 'SF Pro Display', -apple-system, sans-serif",
+                  }}
+                >
+                  Equal breathe
+                </h3>
+                <p
+                  className="text-gray-300 text-sm leading-relaxed font-light tracking-wide"
+                  style={{
+                    fontFamily:
+                      "'Inter', 'SF Pro Text', -apple-system, sans-serif",
+                  }}
+                >
+                  There is no one-size-fits-all solution to mental well-being.
+                  Aura is the first all.
+                </p>
+              </div>
+              <div className="absolute top-6 right-6 w-48 text-right">
+                <h3
+                  className="text-3xl font-semibold mb-4 bg-gradient-to-r from-lime-400 via-lime-300 to-blue-300 bg-clip-text text-transparent tracking-tight leading-tight"
+                  style={{
+                    fontFamily:
+                      "'Inter', 'SF Pro Display', -apple-system, sans-serif",
+                  }}
+                >
+                  Reduce anxiety
+                </h3>
+                <p
+                  className="text-gray-300 text-sm leading-relaxed font-light tracking-wide"
+                  style={{
+                    fontFamily:
+                      "'Inter', 'SF Pro Text', -apple-system, sans-serif",
+                  }}
+                >
+                  There is no one-size-fits-all solution to mental well-being.
+                  Aura is the first all.
+                </p>
+              </div>
+              <div className="absolute bottom-6 left-6 w-48 text-left">
+                <h3
+                  className="text-3xl font-semibold mb-4 bg-gradient-to-r from-blue-300 via-blue-200 to-lime-400 bg-clip-text text-transparent tracking-tight leading-tight"
+                  style={{
+                    fontFamily:
+                      "'Inter', 'SF Pro Display', -apple-system, sans-serif",
+                  }}
+                >
+                  Muscle backpain
+                </h3>
+                <p
+                  className="text-gray-300 text-sm leading-relaxed font-light tracking-wide"
+                  style={{
+                    fontFamily:
+                      "'Inter', 'SF Pro Text', -apple-system, sans-serif",
+                  }}
+                >
+                  There is no one-size-fits-all solution to mental well-being.
+                  Aura is the first all.
+                </p>
+              </div>
+              <div className="absolute bottom-6 right-6 w-48 text-right">
+                <h3
+                  className="text-3xl font-semibold mb-4 bg-gradient-to-r from-yellow-400 via-yellow-300 to-lime-400 bg-clip-text text-transparent tracking-tight leading-tight"
+                  style={{
+                    fontFamily:
+                      "'Inter', 'SF Pro Display', -apple-system, sans-serif",
+                  }}
+                >
+                  Stress reduce
+                </h3>
+                <p
+                  className="text-gray-300 text-sm leading-relaxed font-light tracking-wide"
+                  style={{
+                    fontFamily:
+                      "'Inter', 'SF Pro Text', -apple-system, sans-serif",
+                  }}
+                >
+                  There is no one-size-fits-all solution to mental well-being.
+                  Aura is the first all.
+                </p>
+              </div>
+              {/* Central Solar System Graphic - Centered */}
+              <div className="relative w-80 h-80 flex items-center justify-center mx-auto">
+                {/* Central Image - Meditation figure */}
+                <div className="absolute inset-0 flex items-center justify-center z-20">
+                  <img
+                    src="/sol.png"
+                    alt="Central Meditation"
+                    className="w-30 h-30"
+                  />
+                </div>
+                {/* Orbital Rings */}
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-40 h-40 border border-gray-600/30 rounded-full"></div>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-56 h-56 border border-gray-600/20 rounded-full"></div>
+                </div>
+                <div className="absolute inset-0 flex items-center justify-center">
+                  <div className="w-72 h-72 border border-gray-600/10 rounded-full"></div>
+                </div>
+                {/* Orbital Elements */}
+                <div className="absolute top-6 left-1/2 transform -translate-x-1/2 w-3 h-3 bg-lime-400 rounded-full"></div>
+                <div className="absolute top-1/4 left-6 w-3 h-3 bg-orange-400 rounded-full"></div>
+                <div className="absolute top-1/4 right-6 w-3 h-3 bg-purple-400 rounded-full"></div>
+                <div className="absolute top-1/2 right-2 w-3 h-3 bg-blue-400 rounded-full flex items-center justify-center">
+                  <span className="text-white text-xs">+</span>
+                </div>
+                <div className="absolute bottom-1/4 left-1/2 transform -translate-x-1/2 w-2 h-2 bg-blue-300 rounded-full"></div>
+                <div className="absolute bottom-6 right-6 w-3 h-3 bg-lime-300 rounded-full"></div>
+                <div className="absolute bottom-2 left-1/2 transform -translate-x-1/2 w-5 h-5 bg-purple-300 rounded-full flex items-center justify-center">
+                  <div className="w-3 h-1 bg-pink-300 rounded-full"></div>
+                </div>
+                {/* Decorative Plus Signs */}
+                <div className="absolute top-12 left-12 text-yellow-400 text-xs">
+                  +
+                </div>
+                <div className="absolute top-16 right-16 text-yellow-400 text-xs">
+                  +
+                </div>
+                <div className="absolute bottom-12 left-16 text-yellow-400 text-xs">
+                  +
+                </div>
+                <div className="absolute bottom-16 right-12 text-yellow-400 text-xs">
+                  +
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   );
